@@ -1,4 +1,7 @@
 function calculator(x, y, operator) {
-  return z;
+  switch (operator) {
+    case 'add':
+      return x + y;
+  }
 }
 module.exports = calculator;
