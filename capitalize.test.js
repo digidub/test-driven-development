@@ -11,3 +11,11 @@ test('capitalises two words', () => {
 test('capitalises several words', () => {
   expect(capitalize('hello world how are you doing today')).toBe('Hello World How Are You Doing Today');
 });
+
+test('ignores punctuation', () => {
+  expect(capitalize('hello world, how are you doing today?')).toBe('Hello World, How Are You Doing Today?');
+});
+
+test('returns ERROR if no string provided', () => {
+  expect(capitalize('')).toBe('ERROR');
+});
