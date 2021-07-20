@@ -9,6 +9,8 @@ function calculator(x, y, operator) {
         return x * y;
       case 'divide':
         return x / y;
+      default:
+        return 'ERROR: unknown operator provided';
     }
   }
   return 'ERROR: at least one operand is not in the right format';
